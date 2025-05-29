@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Página inicial • Questionário de Desenvolvimento</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página inicial • Questionário de Desenvolvimento</title>
 
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-    }
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
 
-    h1 {
-      margin-bottom: 40px;
-      text-align: center;
-    }
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+        }
 
-    #start-btn {
-      padding: 12px 28px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
-      background: #007bff;
-      color: #fff;
-      cursor: pointer;
-      transition: filter .2s;
-    }
+        #start-btn {
+            padding: 12px 28px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            background: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: filter .2s;
+        }
 
-    #start-btn:hover {
-      filter: brightness(1.1);
-    }
-  </style>
+        #start-btn:hover {
+            filter: brightness(1.1);
+        }
+    </style>
 </head>
 
 <body>
-  <h1>Bem-vindo ao Questionário de <br />Desenvolvimento de Software</h1>
+    <h1>Questionário de <br />Front-end</h1>
 
-  <!-- Botão que abre o quiz em nova aba -->
-  <button id="start-btn" onclick="window.open('quiz.html', '_blank')">
-    Iniciar Questionário AV1
-  </button>
+    <!-- Botão que abre o quiz em nova aba -->
+    <button id="start-btn" onclick="window.open('quiz.html', '_blank')">
+        Iniciar Questionário AV1
+    </button>
+    <br>
+    <button id="start-btn" onclick="window.open('quiz2.html', '_blank')">
+        Iniciar Questionário AV2
+    </button>
 
-   <button id="start-btn" onclick="window.open('quiz2.html', '_blank')">
-    Iniciar Questionário AV2
-  </button>
-
-  <!-- Se preferir na mesma aba, troque window.open por location.href -->
+    <!-- Se preferir na mesma aba, troque window.open por location.href -->
 </body>
+
 </html>
