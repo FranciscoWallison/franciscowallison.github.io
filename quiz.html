@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionário - Desenvolvimento de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question p {
+            font-weight: bold;
+        }
+
+        .question label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Questionário de Desenvolvimento</h1>
+
+    <form id="quiz-form">
+        <div class="question">
+            <p>1. Sobre a análise de requisitos, quais são as quatro fases principais desse processo?</p>
+            <label><input type="radio" name="q1" value="1"> 1. Levantamento, análise, validação e especificação.</label>
+            <label><input type="radio" name="q1" value="2"> 2. Planejamento, levantamento de supino, avaliação e
+                implementação.</label>
+            <label><input type="radio" name="q1" value="3"> 3. Coleta de dados, modelagem de sistemas, validação e
+                entrega de banco de dados.</label>
+            <label><input type="radio" name="q1" value="4"> 4. Planejamento de dados, design, implementação e
+                manutenção.</label>
+            <label><input type="radio" name="q1" value="5"> 5. BPMN , modelagem, desenvolvimento e análise.</label>
+            <label><input type="radio" name="q1" value="6"> 6. Sprint, avaliação, revisão e modelagem.</label>
+        </div>
+
+        <div class="question">
+            <p>2. Qual é o impacto do conceito de assincronismo no fluxo de execução em programação?</p>
+            <label><input type="radio" name="q2" value="1"> 1. Operações simultâneas, bloqueando o fluxo
+                principal.</label>
+            <label><input type="radio" name="q2" value="2"> 2. Evita interações simultâneas com o servidor.</label>
+            <label><input type="radio" name="q2" value="3"> 3. Executa tarefas em paralelo sem interromper o fluxo
+                principal.</label>
+            <label><input type="radio" name="q2" value="4"> 4. Complica operações síncronas.</label>
+            <label><input type="radio" name="q2" value="5"> 5. Aumenta o tempo de resposta.</label>
+            <label><input type="radio" name="q2" value="6"> 6. Garante respostas rápidas do servidor.</label>
+        </div>
+
+        <div class="question">
+            <p>3. O que a arquitetura de software deve ser capaz de acomodar?</p>
+            <label><input type="radio" name="q3" value="1"> 1. Mudanças futuras no sistema.</label>
+            <label><input type="radio" name="q3" value="2"> 2. Apenas mudanças nos protótipos.</label>
+            <label><input type="radio" name="q3" value="3"> 3. Somente a integração com outros sistemas.</label>
+            <label><input type="radio" name="q3" value="4"> 4. Folha de estilo em cascata (CSS).</label>
+            <label><input type="radio" name="q3" value="5"> 5. Nenhum dos anteriores.</label>
+            <label><input type="radio" name="q3" value="6"> 6. Mudanças e adaptações contínuas no ambiente de
+                negócio.</label>
+        </div>
+
+        <div class="question">
+            <p>4. Frameworks CSS que organizam e gerenciam layout de sites:</p>
+            <label><input type="radio" name="q4" value="1"> 1. ReactJS, AngularJS e VueJS.</label>
+            <label><input type="radio" name="q4" value="2"> 2. Bootstrap.css, Materialize.css e Tailwind.css.</label>
+            <label><input type="radio" name="q4" value="3"> 3. Python, JAVA e JavaScript.</label>
+            <label><input type="radio" name="q4" value="4"> 4. Linux, Windows e macOS.</label>
+            <label><input type="radio" name="q4" value="5"> 5. HTML, Style e Head.</label>
+            <label><input type="radio" name="q4" value="6"> 6. Flask, Django e Spring Boot.</label>
+        </div>
+
+        <div class="question">
+            <p>5. Principais vantagens de usar uma biblioteca de desenvolvimento front-end:</p>
+            <label><input type="radio" name="q5" value="1"> 1. Modularização e reaproveitamento de componentes.</label>
+            <label><input type="radio" name="q5" value="2"> 2. Aumenta a complexidade.</label>
+            <label><input type="radio" name="q5" value="3"> 3. Reduz a flexibilidade.</label>
+            <label><input type="radio" name="q5" value="4"> 4. Cria dependência exclusiva.</label>
+            <label><input type="radio" name="q5" value="5"> 5. Limita interoperabilidade.</label>
+            <label><input type="radio" name="q5" value="6"> 6. Suporte apenas para grandes empresas.</label>
+        </div>
+
+        <div class="question">
+            <p>6. Principal distinção entre back-end e front-end em sistemas web:</p>
+            <label><input type="radio" name="q6" value="1"> 1. Back-end lógica de negócios, front-end interface do
+                usuário.</label>
+            <label><input type="radio" name="q6" value="2"> 2. Front-end servidor, back-end navegador.</label>
+            <label><input type="radio" name="q6" value="3"> 3. Back-end cria APIs, front-end processa banco.</label>
+            <label><input type="radio" name="q6" value="4"> 4. Back-end no cliente, front-end no servidor.</label>
+            <label><input type="radio" name="q6" value="5"> 5. Função igual, linguagens diferentes.</label>
+            <label><input type="radio" name="q6" value="6"> 6. Front-end autenticação, back-end visual.</label>
+        </div>
+
+        <div class="question">
+            <p>7. "Define os objetivos e funções que um software precisa executar..." Estamos falando de:</p>
+            <label><input type="radio" name="q7" value="1"> 1. Bootstrap como objeto padrão.</label>
+            <label><input type="radio" name="q7" value="2"> 2. HTML DOM como interface de programação.</label>
+            <label><input type="radio" name="q7" value="3"> 3. Assincronismo como etapa crucial.</label>
+            <label><input type="radio" name="q7" value="4"> 4. Especificação de requisitos.</label>
+            <label><input type="radio" name="q7" value="5"> 5. Valor agregado para solução.</label>
+            <label><input type="radio" name="q7" value="6"> 6. Map de dados e banco.</label>
+        </div>
+
+        <div class="question">
+            <p>8. Características de um FRAMEWORK:</p>
+            <label><input type="radio" name="q8" value="1"> 1. Elemento gráfico para mídias.</label>
+            <label><input type="radio" name="q8" value="2"> 2. Armazena dados e comunica com bancos.</label>
+            <label><input type="radio" name="q8" value="3"> 3. Declara idioma no HTML.</label>
+            <label><input type="radio" name="q8" value="4"> 4. Conjunto de códigos genéricos para projetos.</label>
+            <label><input type="radio" name="q8" value="5"> 5. Folha de estilo em cascata.</label>
+        </div>
+        <!--  -->
+
+        <!-- Novas questões 9 a 15 -->
+        <div class="question">
+            <p>9. O que é a especificação de requisitos de software?</p>
+            <label><input type="radio" name="q9" value="1"> 1. Um conjunto de estilos visuais aplicados à
+                interface.</label>
+            <label><input type="radio" name="q9" value="2"> 2. Modelo da estrutura física dos dados.</label>
+            <label><input type="radio" name="q9" value="3"> 3. Um documento que define o que o software deve ou não
+                fazer.</label>
+            <label><input type="radio" name="q9" value="4"> 4. A forma como o banco será acessado.</label>
+            <label><input type="radio" name="q9" value="5"> 5. Processo de desenvolvimento da interface.</label>
+            <label><input type="radio" name="q9" value="6"> 6. Um padrão de segurança.</label>
+        </div>
+
+        <div class="question">
+            <p>10. O que são tags em HTML?</p>
+            <label><input type="radio" name="q10" value="1"> 1. Comandos usados apenas para estilo.</label>
+            <label><input type="radio" name="q10" value="2"> 2. Tipo especial de variável.</label>
+            <label><input type="radio" name="q10" value="3"> 3. Instruções que definem a estrutura de páginas
+                web.</label>
+            <label><input type="radio" name="q10" value="4"> 4. Elementos de banco relacional.</label>
+            <label><input type="radio" name="q10" value="5"> 5. Funções do JavaScript.</label>
+            <label><input type="radio" name="q10" value="6"> 6. Estilos aplicados via CSS.</label>
+        </div>
+
+        <div class="question">
+            <p>11. Qual é a principal função do CSS em uma página web?</p>
+            <label><input type="radio" name="q11" value="1"> 1. Gerenciar o back-end.</label>
+            <label><input type="radio" name="q11" value="2"> 2. Adicionar funcionalidades.</label>
+            <label><input type="radio" name="q11" value="3"> 3. Aplicar estilo visual à página.</label>
+            <label><input type="radio" name="q11" value="4"> 4. Conectar com banco de dados.</label>
+            <label><input type="radio" name="q11" value="5"> 5. Controlar o fluxo do JavaScript.</label>
+            <label><input type="radio" name="q11" value="6"> 6. Carregar mídias externas.</label>
+        </div>
+
+        <div class="question">
+            <p>12. O que é uma API?</p>
+            <label><input type="radio" name="q12" value="1"> 1. Protocolo de conexão com internet.</label>
+            <label><input type="radio" name="q12" value="2"> 2. Interface gráfica de dispositivos móveis.</label>
+            <label><input type="radio" name="q12" value="3"> 3. Conjunto de regras para comunicação entre
+                softwares.</label>
+            <label><input type="radio" name="q12" value="4"> 4. Modelo de banco orientado a objetos.</label>
+            <label><input type="radio" name="q12" value="5"> 5. Arquivo CSS com configurações.</label>
+            <label><input type="radio" name="q12" value="6"> 6. Método de criptografia.</label>
+        </div>
+
+        <div class="question">
+            <p>13. Qual das opções representa estruturas de dados comuns?</p>
+            <label><input type="radio" name="q13" value="1"> 1. body, style, br</label>
+            <label><input type="radio" name="q13" value="2"> 2. Blueprint, Interface, Controller</label>
+            <label><input type="radio" name="q13" value="3"> 3. String, Inteiro, Array, Boolean</label>
+            <label><input type="radio" name="q13" value="4"> 4. IP, DNS, TCP</label>
+            <label><input type="radio" name="q13" value="5"> 5. CSS, HTML, JS</label>
+            <label><input type="radio" name="q13" value="6"> 6. JSON, XML, YAML</label>
+        </div>
+
+        <div class="question">
+            <p>14. Quais são exemplos de tags semânticas em HTML5?</p>
+            <label><input type="radio" name="q14" value="1"> 1. div, span, b</label>
+            <label><input type="radio" name="q14" value="2"> 2. style, script, br</label>
+            <label><input type="radio" name="q14" value="3"> 3. header, main, footer</label>
+            <label><input type="radio" name="q14" value="4"> 4. img, link, input</label>
+            <label><input type="radio" name="q14" value="5"> 5. var, kbd, samp</label>
+            <label><input type="radio" name="q14" value="6"> 6. form, option, label</label>
+        </div>
+
+        <div class="question">
+            <p>15. Qual a principal diferença entre frameworks e bibliotecas?</p>
+            <label><input type="radio" name="q15" value="1"> 1. Bibliotecas são mais pesadas.</label>
+            <label><input type="radio" name="q15" value="2"> 2. Frameworks não são reutilizáveis.</label>
+            <label><input type="radio" name="q15" value="3"> 3. Frameworks controlam o fluxo, bibliotecas oferecem
+                funções específicas.</label>
+            <label><input type="radio" name="q15" value="4"> 4. Bibliotecas funcionam no back-end, frameworks no
+                front-end.</label>
+            <label><input type="radio" name="q15" value="5"> 5. Frameworks são só com Java, bibliotecas com
+                Python.</label>
+            <label><input type="radio" name="q15" value="6"> 6. São exatamente iguais.</label>
+        </div>
+
+        <button type="button" id="submit-btn">Enviar Respostas</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const correctAnswers = {
+      q1: '1',
+      q2: '3',
+      q3: '6',
+      q4: '2',
+      q5: '1',
+      q6: '1',
+      q7: '4',
+      q8: '4',
+      q9: '3',
+      q10: '3',
+      q11: '3',
+      q12: '3',
+      q13: '3',
+      q14: '3',
+      q15: '3'
+    };
+
+    document.getElementById('submit-btn').addEventListener('click', () => {
+      let score = 0;
+      const form = document.getElementById('quiz-form');
+      for (let key in correctAnswers) {
+        const selected = form[key].value;
+        if (selected === correctAnswers[key]) {
+          score++;
+        }
+      }
+      document.getElementById('result').innerText = `Você acertou ${score} de 15 questões.`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionário – Fundamentos de Front-end</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .question p {
+      font-weight: bold;
+    }
+
+    .question label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #submit-btn {
+      display: block;
+      margin: 30px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #result {
+      text-align: center;
+      font-size: 20px;
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Questionário – Fundamentos de Front-end</h1>
+
+  <form id="quiz-form">
+    <!-- 1 -->
+    <div class="question">
+      <p>1. Qual separação resume melhor a diferença entre front-end e back-end?</p>
+      <label><input type="radio" name="q1" value="1"> 1. Front-end cuida da experiência no navegador; back-end lida com regras de negócio e dados.</label>
+      <label><input type="radio" name="q1" value="2"> 2. Front-end gerencia banco de dados; back-end aplica CSS.</label>
+      <label><input type="radio" name="q1" value="3"> 3. Não existe diferença real entre os dois.</label>
+      <label><input type="radio" name="q1" value="4"> 4. Back-end roda no navegador; front-end no servidor.</label>
+      <label><input type="radio" name="q1" value="5"> 5. Front-end faz deploy de containers; back-end ajusta cores.</label>
+    </div>
+
+    <!-- 2 -->
+    <div class="question">
+      <p>2. Em uma Single Page Application (SPA) bem construída, como ocorre a navegação?</p>
+      <label><input type="radio" name="q2" value="1"> 1. Cada clique dispara um <code>window.location.reload()</code>.</label>
+      <label><input type="radio" name="q2" value="2"> 2. O roteamento acontece no cliente, atualizando apenas partes da página via DOM ou Virtual DOM.</label>
+      <label><input type="radio" name="q2" value="3"> 3. Toda rota gera nova chamada full page ao servidor.</label>
+      <label><input type="radio" name="q2" value="4"> 4. A URL não muda, mas o servidor renderiza tudo outra vez.</label>
+      <label><input type="radio" name="q2" value="5"> 5. Requer páginas estáticas sem JavaScript.</label>
+    </div>
+
+    <!-- 3 -->
+    <div class="question">
+      <p>3. Qual afirmação descreve corretamente a diferença entre framework e biblioteca?</p>
+      <label><input type="radio" name="q3" value="1"> 1. Framework controla o fluxo da aplicação; biblioteca fornece funções pontuais que você chama quando precisar.</label>
+      <label><input type="radio" name="q3" value="2"> 2. Bibliotecas são sempre mais pesadas que frameworks.</label>
+      <label><input type="radio" name="q3" value="3"> 3. Framework só pode ser usado no back-end.</label>
+      <label><input type="radio" name="q3" value="4"> 4. Bibliotecas obrigam o uso de MVC.</label>
+      <label><input type="radio" name="q3" value="5"> 5. Não há diferença técnica entre eles.</label>
+    </div>
+
+    <!-- 4 -->
+    <div class="question">
+      <p>4. Qual é um benefício prático de adotar um framework de interface (UI)?</p>
+      <label><input type="radio" name="q4" value="1"> 1. Acelera a entrega com componentes reutilizáveis e arquitetura testada.</label>
+      <label><input type="radio" name="q4" value="2"> 2. Elimina completamente todos os bugs.</label>
+      <label><input type="radio" name="q4" value="3"> 3. Reduz 100% os custos de infraestrutura.</label>
+      <label><input type="radio" name="q4" value="4"> 4. Impede a execução de testes automatizados.</label>
+      <label><input type="radio" name="q4" value="5"> 5. Obriga a equipe a usar jQuery.</label>
+    </div>
+
+    <!-- 5 -->
+    <div class="question">
+      <p>5. Por que chamadas assíncronas melhoram a experiência do usuário?</p>
+      <label><input type="radio" name="q5" value="1"> 1. Evitam bloquear a interface enquanto o servidor responde.</label>
+      <label><input type="radio" name="q5" value="2"> 2. São sempre mais lentas que chamadas síncronas.</label>
+      <label><input type="radio" name="q5" value="3"> 3. Aumentam propositalmente a latência para testes.</label>
+      <label><input type="radio" name="q5" value="4"> 4. Impedem o uso de cache no navegador.</label>
+      <label><input type="radio" name="q5" value="5"> 5. Consomem menos memória por serem síncronas internamente.</label>
+    </div>
+
+    <!-- 6 -->
+    <div class="question">
+      <p>6. Em REST, qual método é indicado para obter dados sem efeitos colaterais?</p>
+      <label><input type="radio" name="q6" value="1"> 1. GET</label>
+      <label><input type="radio" name="q6" value="2"> 2. POST</label>
+      <label><input type="radio" name="q6" value="3"> 3. DELETE</label>
+      <label><input type="radio" name="q6" value="4"> 4. PATCH</label>
+      <label><input type="radio" name="q6" value="5"> 5. OPTIONS</label>
+    </div>
+
+    <!-- 7 -->
+    <div class="question">
+      <p>7. Com prazo de 3 dias para um protótipo, qual abordagem usa melhor a ideia de “framework como esqueleto”?</p>
+      <label><input type="radio" name="q7" value="1"> 1. Iniciar com um boilerplate React + Vite e customizar.</label>
+      <label><input type="radio" name="q7" value="2"> 2. Escrever HTML/CSS/JS do zero.</label>
+      <label><input type="radio" name="q7" value="3"> 3. Copiar snippets aleatórios de fóruns.</label>
+      <label><input type="radio" name="q7" value="4"> 4. Fazer wireframes em Word.</label>
+      <label><input type="radio" name="q7" value="5"> 5. Criar a UI em planilha Excel.</label>
+    </div>
+
+    <!-- 8 -->
+    <div class="question">
+      <p>8. Qual métrica de performance depende diretamente de requisições assíncronas bem feitas?</p>
+      <label><input type="radio" name="q8" value="1"> 1. First Contentful Paint (FCP) / Time to Interactive (TTI).</label>
+      <label><input type="radio" name="q8" value="2"> 2. Número de commits por sprint.</label>
+      <label><input type="radio" name="q8" value="3"> 3. Linhas de CSS no projeto.</label>
+      <label><input type="radio" name="q8" value="4"> 4. Total de arquivos Figma.</label>
+      <label><input type="radio" name="q8" value="5"> 5. Status do pipeline CI/CD.</label>
+    </div>
+
+    <!-- 9 -->
+    <div class="question">
+      <p>9. Encontrou 500 linhas de CSS bloqueante no <code>&lt;head&gt;</code>. Qual prática recomendada?</p>
+      <label><input type="radio" name="q9" value="1"> 1. Separar critical CSS e carregar o restante de forma assíncrona.</label>
+      <label><input type="radio" name="q9" value="2"> 2. Manter tudo inline para poupar requisições.</label>
+      <label><input type="radio" name="q9" value="3"> 3. Usar <code>@import</code> aninhado dentro de outro CSS.</label>
+      <label><input type="radio" name="q9" value="4"> 4. Remover todo o CSS e deixar estilos default.</label>
+      <label><input type="radio" name="q9" value="5"> 5. Minificar somente o JavaScript.</label>
+    </div>
+
+    <!-- 10 -->
+    <div class="question">
+      <p>10. Qual pergunta de requisitos ajuda a garantir que o front-end suporte mudanças futuras?</p>
+      <label><input type="radio" name="q10" value="1"> 1. “Quais partes da interface estão sujeitas a regras que podem mudar, para isolarmos em componentes modulares?”</label>
+      <label><input type="radio" name="q10" value="2"> 2. “Qual fonte usaremos nos títulos?”</label>
+      <label><input type="radio" name="q10" value="3"> 3. “Podemos remover o ambiente de homologação?”</label>
+      <label><input type="radio" name="q10" value="4"> 4. “Quantas linhas de CSS podemos escrever por sprint?”</label>
+      <label><input type="radio" name="q10" value="5"> 5. “Qual cor padrão da navbar?”</label>
+    </div>
+
+    <button type="button" id="submit-btn">Enviar Respostas</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    const correctAnswers = {
+      q1: '1',
+      q2: '2',
+      q3: '1',
+      q4: '1',
+      q5: '1',
+      q6: '1',
+      q7: '1',
+      q8: '1',
+      q9: '1',
+      q10: '1'
+    };
+
+    document.getElementById('submit-btn').addEventListener('click', () => {
+      let score = 0;
+      const form = document.getElementById('quiz-form');
+
+      for (const key in correctAnswers) {
+        const chosen = form[key].querySelector(':checked');
+        if (chosen && chosen.value === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      document.getElementById('result').innerText =
+        `Você acertou ${score} de ${Object.keys(correctAnswers).length} questões.`;
+    });
+  </script>
+</body>
+
+</html>
