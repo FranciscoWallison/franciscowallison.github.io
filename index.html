@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página inicial • Questionário de Desenvolvimento</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite - Live Share</title>
     <style>
+        /* Fundo escuro focado em desenvolvedores */
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f0f2f5;
+            background-color: #1e1e1e; /* Cor de fundo do VS Code */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
-        h1 {
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        #start-btn {
-            padding: 12px 28px;
+        /* Estilo do botão com a cor do VS Code */
+        a.botao-central {
+            padding: 16px 32px;
+            background-color: #007acc; /* Azul padrão do VS Code */
+            color: #ffffff;
+            text-decoration: none;
             font-size: 18px;
-            border: none;
-            border-radius: 8px;
-            background: #007bff;
-            color: #fff;
-            cursor: pointer;
-            transition: filter .2s;
+            font-weight: bold;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
-        #start-btn:hover {
-            filter: brightness(1.1);
+        /* Efeito Hover */
+        a.botao-central:hover {
+            background-color: #005f9e;
+            transform: translateY(-2px);
         }
     </style>
 </head>
-
 <body>
-    <h1>Questionário de <br />Front-end</h1>
 
-    <!-- Botão que abre o quiz em nova aba -->
-    <button id="start-btn" onclick="window.open('quiz.html', '_blank')">
-        Iniciar Questionário AV1
-    </button>
-    <br>
-    <button id="start-btn" onclick="window.open('quiz2.html', '_blank')">
-        Iniciar Questionário AV2
-    </button>
+    <a href="https://prod.liveshare.vsengsaas.visualstudio.com/join?E2A1F47DF994A9A68754CB963A7A8E40A0BB" class="botao-central" target="_blank">
+        Entrar na Sessão do Live Share
+    </a>
 
-    <!-- Se preferir na mesma aba, troque window.open por location.href -->
 </body>
-
 </html>
